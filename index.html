@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Booking App</h1>
+        <h2><a href="bookings.html" target="_blank">Booked dates</a></h2>
+    </header>
+    <div class="sidebar">
+        <ul id="room-list"></ul>
+    </div>
+    <div id="calendar-container">
+        <button id="prev-month">Previous</button>
+        <span id="current-month"></span>
+        <button id="next-month">Next</button>
+        <div class="calendar-wrapper">
+            <table id="calendar"></table>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="booking-form">
+                <input type="text" id="room-number">
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" required>
+                <label for="check-out-date">Check-out Date:</label>
+                <input type="date" id="check-out-date" required>
+                <label for="guest-name">Guest Name:</label>
+                <input type="text" id="guest-name" required>
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" required>
+                <label for="paid-status">Paid Status:</label>
+                <select id="paid-status" required>
+                    <option value="paid">Paid</option>
+                    <option value="not_paid">Not Paid</option>
+                    <option value="deposit">Deposit</option>
+                </select>
+                <label for="adults">Adults:</label>
+                <input type="number" id="adults" required>
+                <label for="children">Children:</label>
+                <input type="number" id="children" required>
+                <button type="submit">Book</button>
+                <button type="button" id="cancel-booking" class="cancel-booking" style="display: none;">
+                    Cancel Reservation</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

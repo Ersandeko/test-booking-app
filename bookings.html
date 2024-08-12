@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking Overview</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-booking.css">
+</head>
+<body>
+    <header>
+        <h1>Room Booking Overview</h1>
+        <nav>
+            <a href="index.html" class="backCalendar">Back to Calendar</a>
+        </nav>
+    </header>
+    <div class="container">
+        <label for="filter-date">Filter by Check-out Date:</label>
+       <input type="date" id="filter-date">
+        <table id="bookings-table">
+            <thead>
+                <tr>
+                    <th>Room Number</th>
+                    <th>Check-in Date</th>
+                    <th>Check-out Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Booking rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="bookings.js"></script>
+</body>
+</html>

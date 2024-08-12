@@ -1,0 +1,43 @@
+/* Add this at the end of your styles.css */
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+td[style*="background-color: red"] {
+    color: white;
+}
+
+td[style*="background-color: yellow"] {
+    color: black;
+}
+
+td[style*="background-color: #00b4d8"] {
+    color: white;
+}
+
+#filter-date {
+  width: 200px;
+  height: 50px;
+}
+
+a:link {
+    color: wheat;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
